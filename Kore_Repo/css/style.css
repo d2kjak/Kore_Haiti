@@ -587,16 +587,15 @@
 	padding: 83px 0px 90px 0px;
 	/*background: #eee url(../images/fullbg.jpg) no-repeat center top;*/
 	/*background: url(../images/temp_pic.jpg) no-repeat center center bottom;*/
-	background: url(../images/Enlight15.jpg);
-	-webkit-background-size: cover; /* For WebKit*/
+	background: url(../images/Enlight15.png);
+	-webkit-background-size: center; /* For WebKit*/
   -moz-background-size: cover;    /* Mozilla*/
   -o-background-size: cover;      /* Opera*/
-	background-attachment: fixed;
-    background-position: center;
+	background-attachment: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-	width: 100%;
-	position: relative;
+
 }
 /*
 .feature_section11 {
@@ -1699,366 +1698,302 @@ ul.fun_facts {
 }
 
 /*
-*Trying something
+*Ignore this START
 */
 
-#img-try h2{
-	padding-top: 15px;
-	padding-bottom: 15px;
-	color: #01209f;
+.mycontainer{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
 }
-
-
-@media only screen and (max-width:320px){
-	.my-img{
-		width: 100%;
-		height: 100%;
-	}
-
-	.my-img:hover img{
-		filter: blur(6px) brightness(50%);
-	}
-
-	.my-img :not(img){
-		position: absolute;
-		top: 30%;
-		z-index: 1;
-		/*color: #FF0000;RED * done*/
-		color: #6495ED;
-		width: 100%;
-		opacity: 0;
-		transition: .3s;
-	}
-
-	.row{
-
-	}
-
-	.list-under{
-		position: relative;
-		/*color: #ccc;white*/
-		margin: 0 auto;
-		width: 100%;
-		height: 100%;
-		transform: translateY(2em);
-		transform: translateX(-10em);
-		transition: 0.5s;
-		font-size: 85%;
-		display: inline;
-		text-align: center;
-		font-family: 'Raleway', sans-serif;
-		font-weight: normal;
-	}
-
-	.my-img p{
-		top: 50%;
-	}
-
-	.my-img:hover :not(img){
-		opacity: 1;
-	}
-
-	.my-img img{
-		width: 100%;
-		height: 100%;
-		border-radius: 4px;
-		transition: .3s;
-	}
-
+.mycontainer div{
+	border: 1px #ccc solid;
+	padding: 10px;
 }
-
-@media screen and (min-width:321px) and (max-width:480px){
-
-	.my-img{
-	width: 100%;
-	height: 100%;
+.box-1{
+	flex:1;
+	background-color: #404952;
+	color: #fff;
 }
-
-.my-img:hover img{
-	filter: blur(6px) brightness(50%);
-}
-
-.my-img :not(img){
-	position: absolute;
-	top: 30%;
-	z-index: 1;
-	/*color: #800080;PURPLE* done */
-	color: #6495ED;
-	width: 100%;
+box-2{
+	flex: 1;
+	justify-content: center;
 	opacity: 0;
-	transition: .3s;
+	background-color: #01209f;
 }
-
-.row{
-
+.boxlist{
+	 display:inline;
+	 list-style-type: none;
 }
-
-.list-under{
-	position: relative;
-	/*color: #ccc;white*/
-	margin: 0 auto;
-	width: 100%;
-	height: 100%;
-	transform: translateY(2em);
-	transform: translateX(-10em);
-	transition: 0.5s;
-	font-size: 85%;
-	display: inline;
-	text-align: center;
+.boxlist li{
+	list-style: circle;
+	text-align: left;
+	text-indent: -0.4em;
+	transform: translateX(1em);
+	display: wrap;
+	margin: 1em 0;
 	font-family: 'Raleway', sans-serif;
-	font-weight: normal;
+  font-weight: normal;
 }
 
-.my-img p{
-	top: 50%;
+
+
+/*
+*Ignore this END
+*/
+
+
+/*
+*Trying something START
+*/
+
+
+
+/*
+*Trying something END
+*/
+
+
+
+#temphead {
+  padding: .5vw;
+  font-size: 1.1em;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+	border: 2px solid black;
 }
-
-.my-img:hover :not(img){
-	opacity: 1;
+#temphead div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 300px;
+  margin: .5vw;
+	border: 2px solid black
 }
-
-.my-img img{
-	width: 100%;
-	height: 100%;
-	border-radius: 4px;
-	transition: .3s;
+#temphead div img {
+  width: 100%;
+  height: 100%;
 }
-
+#temphead div ul{
+  width: 100%;
+  height: 100%;
 }
-
-@media screen and (min-width:481px) and (max-width:767px){
-
-	.my-img{
-		width: 100%;
-		height: 100%;
-	}
-
-	.my-img:hover img{
-		filter: blur(6px) brightness(50%);
-	}
-
-	.my-img :not(img){
-		position: absolute;
-		top: 30%;
-		z-index: 1;
-		/*color: #FFA500;ORANGE* done */
-		color: #6495ED;
-		width: 100%;
-		opacity: 0;
-		transition: .3s;
-	}
-
-	.row{
-
-	}
-
-	.list-under{
-		position: relative;
-		/*color: #ccc;white*/
-		margin: 0 auto;
-		width: 100%;
-		height: 100%;
-		transform: translateY(2em);
-		transform: translateX(-11em);
-		transition: 0.5s;
-		font-size: 115%;
-		display: inline;
-		text-align: center;
-		font-family: 'Raleway', sans-serif;
-		font-weight: normal;
-	}
-
-	.my-img p{
-		top: 50%;
-	}
-
-	.my-img:hover :not(img){
-		opacity: 1;
-	}
-
-	.my-img img{
-		width: 100%;
-		height: 100%;
-		border-radius: 4px;
-		transition: .3s;
-	}
-
-}
-
-@media screen and (min-width:768px) and (max-width:991px)/*991*/{
-
-	.my-img{
-		width: 100%;
-		height: 100%;
-	}
-
-	.my-img:hover img{
-		filter: blur(6px) brightness(50%);
-	}
-
-	.my-img :not(img){
-		position: absolute;
-		top: 30%;
-		z-index: 1;
-		/*color: #00FF00;GREEN* done */
-		color: #6495ED;
-		width: 100%;
-		opacity: 0;
-		transition: .3s;
-	}
-
-	.row{
-
-	}
-
-	.list-under{
-		position: relative;
-		/*color: #ccc;white*/
-		margin: 0 auto;
-		width: 100%;
-		height: 100%;
-		transform: translateY(2em);/*Can't do nothing about that, so its good*/
-		transform: translateX(-16.5em);
-		transition: 0.5s;
-		font-size: 120%;
-		display: inline;
-		text-align: center;
-		font-family: 'Raleway', sans-serif;
-		font-weight: normal;
-	}
-
-	.my-img p{
-		top: 50%;
-	}
-
-	.my-img:hover :not(img){
-		opacity: 1;
-	}
-
-	.my-img img{
-		width: 100%;
-		height: 100%;
-		border-radius: 4px;
-		transition: .3s;
-	}
-
-}
-
-@media screen and (min-width:992px) and (max-width:1199px)/*991*/{
-
-	.my-img{
-		width: 100%;
-		height: 100%;
-	}
-
-	.my-img:hover img{
-		filter: blur(6px) brightness(50%);
-	}
-
-	.my-img :not(img){
-		position: absolute;
-		top: 30%;
-		z-index: 1;
-		/*color: #fff; white* done */
-		color: #6495ED;
-		width: 100%;
-		opacity: 0;
-		transition: .3s;
-	}
-
-	.row{
-
-	}
-
-	.list-under{
-		position: relative;
-		/*color: #ccc;white*/
-		margin: 0 auto;
-		width: 100%;
-		height: 100%;
-		transform: translateY(2em);
-		transform: translateX(-10em);
-		transition: 0.5s;
-		font-size: 88%;
-		display: inline;
-		text-align: center;
-		font-family: 'Raleway', sans-serif;
-		font-weight: normal;
-	}
-
-	.my-img p{
-		top: 50%;
-	}
-
-	.my-img:hover :not(img){
-		opacity: 1;
-	}
-
-	.my-img img{
-		width: 100%;
-		height: 100%;
-		border-radius: 4px;
-		transition: .3s;
-	}
+@media screen and (max-width: 400px) {
+  #temphead div { margin: 0; }
+  #temphead { padding: 0; }
 
 }
 
 
-@media screen and (min-width:1200px)/*1025, *1350 */{
-	.my-img{
-		width: 100%;
-		height: 100%;
-	}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+#tempcontainer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-	.my-img:hover img{
-		filter: blur(6px) brightness(35%);
-	}
 
-	.my-img :not(img){
-		position: absolute;
-		top: 30%;
-		z-index: 1;
-		color: #6495ED; /*blue-ish* done*/
-		width: 100%;
-		opacity: 0;
-		transition: .3s;
-	}
 
-	.row{
+.accordion dl {
+}
 
-	}
+.accordion dt > a {
+  text-align: center;
+  font-weight: 700;
+	font-size: 1.2em;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.5s ease-in-out;
+}
+.accordion dd {
+  background-color: #fff;
+  color:#fafafa;
+}
+.accordion dd > p {
+  padding: 1em 2em 1em 2em;
+}
 
-	.list-under{
-		position: relative;
-		/*color: #ccc;white*/
-		margin: 0 auto;
-		width: 100%;
-		height: 100%;
-		transform: translateY(2em);
-		transform: translateX(-10em);
-		transition: 0.5s;
-		font-size: 100%;
-		display: inline;
-		text-align: center;
-		font-family: 'Raleway', sans-serif;
-		font-weight: normal;
-	}
+.accordion {
+  position: relative;
+  background-color: #fff;
+}
 
-	.my-img p{
-		top: 50%;
-	}
+#tempcontainer {
+  /*max-width: 960px;*/
+  margin: 0 auto;
+  padding: 2em 0 2em 0;
+}
 
-	.my-img:hover :not(img){
-		opacity: 1;
-	}
+.accordionTitle {
+  background-color: #172b7d;/*#22313F-->#172b7d*/
+  border-bottom: 1px solid black;/*#2c3e50-->#13afeb*/
+}
+.accordionTitle:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionTitle:hover {
+  background-color: #13afeb;/*#2c3e50-->#13afeb*/
+}
 
-	.my-img img{
-		width: 100%;
-		height: 100%;
-		border-radius: 4px;
-		transition: .3s;
-	}
+.accordionTitleActive {
+  background-color:#172b7d;/*#34495e-->#172b7d*/
+}
+.accordionTitleActive:before {
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
 
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+}
+@media all {
+  .accordionItem {
+    height: 100%;
+    -moz-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    -webkit-transition: max-height 1s;
+    transition: max-height 1s;
+  }
+}
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    height: 100%;
+    -moz-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+}
+
+.accordionItemCollapsed {
+  max-height: 0;
+}
+
+.animateIn {
+  -webkit-animation-name: accordionIn;
+  -webkit-animation-duration: 0.65s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: normal;
+  -moz-animation-duration: 0.65s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: both;
+  -moz-animation-delay: 0s;
+  animation-name: accordionIn;
+  animation-duration: 0.65s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+
+.animateOut {
+  -webkit-animation-name: accordionOut;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: accordionOut;
+  -moz-animation-duration: 0.75s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: both;
+  -moz-animation-delay: 0s;
+  animation-name: accordionOut;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
 }
 
 
@@ -2070,22 +2005,21 @@ ul.fun_facts {
 		font-family: 'Raleway', sans-serif;
 	font-weight: normal;
 	color: #272727;
-		text-transform: uppercase;
     margin-bottom: 13px;
     /*padding-left: 390px;*/
-		opacity: 0.8;
+		font-size: 1.1em;/*blah - either this*/
+		margin-top: 40px;
 		position: relative;
 		text-align: center;
 		/*float: left;*/
 }
 
 .homepage-headers h1{
-	font-size: 3em;
 	font-weight: 400;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	color: #01209f;
-	font-size: 300%;
+	font-size: 300%; /*or this - blah*/
 }
 
 .missiontrip-info{
@@ -2094,18 +2028,44 @@ ul.fun_facts {
 	margin: auto;
 	overflow: hidden;
 	position: relative;
+	margin-bottom: 40px;
 }
 
  .mytrip{
-	transform: translateX(1.7em);
+	transform: translateX(1.3em);*/
+	text-indent: -9px;
+	/*color: #fff;*/
+	list-style: none;
+	text-align: left;
+	/*font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  color: #272727;*/
+	font: 14px 'Open Sans', sans-serif;
+  font-weight: normal;
+  line-height: 23px;
+	color: #727272;
+}
+.metrying{
 	list-style: circle;
+	font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+.mytrip2{
+ transform: translateX(1.3em);
+ list-style: circle;
+ text-align: left;
+ font-size: 1.3em;
+ font-family: 'Raleway', sans-serif;
+ font-weight: normal;
+ color: #272727;
 }
 
 .missiontrip-info h3{
 	font-size: 60px;
 	margin-top: 40px;
 	margin-bottom: 30px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	color: #272727;
 }
@@ -2129,6 +2089,20 @@ ul.fun_facts {
 	color: #272727;
 }
 
+#missiontrip-padding p{
+	margin-top: 20px;
+	margin-bottom: 35px;
+	/*font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: #272727;*/
+	font: 14px 'Open Sans', sans-serif;
+  font-weight: normal;
+  line-height: 23px;
+	color: #727272;
+	display: inline-block;
+	float: left;
+}
+
 #missioninfo-links .apply-here{
 	list-style: none;
 	float: left;
@@ -2141,6 +2115,19 @@ ul.fun_facts {
 	font-weight: normal;
 	color: #272727;
 	float: left;
+}
+
+#missioninfo-links .apply-here2{
+	list-style: none;
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 10px;
+	font-size: 3em;
+	/*margin-left: 0.3em;*/
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	color: #272727;
 }
 
 #missioninfo-links .learn-more{
@@ -2435,11 +2422,14 @@ ul.fun_facts {
 	color: #999;
 	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
-	background: url(../images/Enlight7.jpg) no-repeat center fixed;
-	-webkit-background-size: cover;
- 	-moz-background-size: center;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background: url(../images/Enlight7_3.png);
+	-webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+	background-attachment: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*FOR PROJECTS TAB HEADER*/
@@ -2453,11 +2443,14 @@ ul.fun_facts {
 	color: #999;
 	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
-	background: url(../images/Enlight10.jpg) no-repeat bottom fixed;
-	-webkit-background-size: center;
- 	-moz-background-size: center;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background: url(../images/Enlight10.jpg);
+	-webkit-background-size: center; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+	background-attachment: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mypage_title h1 {
@@ -2514,11 +2507,14 @@ ul.fun_facts {
 	color: #999;
 	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
-	background: url(../images/Enlight5.jpg) no-repeat bottom fixed;
-	-webkit-background-size: center;
- 	-moz-background-size: center;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background: url(../images/Enlight5.jpg);
+	-webkit-background-size: center; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+	background-attachment: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .yourpage_title h1 {
@@ -2531,6 +2527,39 @@ ul.fun_facts {
 }
 /*
 *For contact
+*/
+
+/*FOR Mission Trip TAB HEADER*/
+.theirpage_title {
+	float: left;
+	width: 100%;
+	padding: 165px 0px 35px 0px;
+	text-align: center;
+	font-size: 14px;
+	border-top: 5px solid #01209F;
+	color: #999;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	background: url(../images/Enlight15.jpg);
+	-webkit-background-size: center; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+	background-attachment: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.theirpage_title h1 {
+	color: #01209F;
+	font-size: 60px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+	padding-bottom: 100px;
+}
+/*
+*For Missions Trip
 */
 
 .page_title.two {
